@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B Nacional - Tabla y Fixture</title>
+  <style>
+    :root {
+      --bg-color: #111;
+      --text-color: #f0f0f0;
+      --accent-color: #4caf50;
+      --card-bg: #1c1c1c;
+      --border-color: #333;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--card-bg);
+      padding: 1rem;
+      text-align: center;
+      border-bottom: 2px solid var(--accent-color);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: var(--accent-color);
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    section {
+      background: var(--card-bg);
+      padding: 1rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 8px #0008;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: var(--accent-color);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    th, td {
+      padding: 0.6rem;
+      text-align: center;
+      border: 1px solid var(--border-color);
+    }
+
+    th {
+      background-color: #222;
+    }
+
+    tr:nth-child(even) {
+      background-color: #181818;
+    }
+
+    @media (max-width: 600px) {
+      th, td {
+        font-size: 0.85rem;
+        padding: 0.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>B Nacional - Tabla y Fixture</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Tabla de Posiciones</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Equipo</th>
+            <th>Pts</th>
+            <th>PJ</th>
+            <th>PG</th>
+            <th>PE</th>
+            <th>PP</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>San Martín (T)</td>
+            <td>28</td>
+            <td>13</td>
+            <td>8</td>
+            <td>4</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Chacarita</td>
+            <td>26</td>
+            <td>13</td>
+            <td>7</td>
+            <td>5</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Gimnasia (M)</td>
+            <td>24</td>
+            <td>13</td>
+            <td>7</td>
+            <td>3</td>
+            <td>3</td>
+          </tr>
+          <!-- Agregá más equipos acá -->
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Fixture - Última Fecha</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Local</th>
+            <th>Resultado</th>
+            <th>Visitante</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fecha 13</td>
+            <td>Chacarita</td>
+            <td>1 - 1</td>
+            <td>Quilmes</td>
+          </tr>
+          <tr>
+            <td>Fecha 13</td>
+            <td>Patronato</td>
+            <td>0 - 0</td>
+            <td>Mitre (SE)</td>
+          </tr>
+          <!-- Agregá más partidos -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
